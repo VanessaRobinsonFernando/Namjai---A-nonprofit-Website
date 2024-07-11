@@ -1,0 +1,156 @@
+<html>
+
+<head>
+
+<title> ADOPT PETS</title>
+<link href="../../CSS/Pets.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+
+
+<div class = "textoverimg">
+<img class = "headingimg" src="../../images/headingimg.jpg" alt="cat">
+<div class="heading">
+<h1>FOUR-LEGGED <br>FRIENDS</h1>
+</div>
+</div>
+
+<p>This is a platform where we let you adopt pets that were earlier stray animals. Nam-jai's pet friendly workers give shelter 
+to domestic animals found on the streets especially those who are injured or starving. A small shelter home is provided to the animals and they are given good
+nutrition and medical attention as well. They are regularly cleaned and well groomed. Our main motive is to provide them with proper homes to get the love and care they 
+require, we indulge in keeping them in a safe environment and pass them on to their interested owner.
+</p>
+
+<h4> All you need to know about the adoption process</h4>
+
+<div class="bannericon">
+
+<div class="iconsgroup">
+<img class ="icon" src ="../../images/icon1.jpg" alt="Vaccination" width="180" height="180"/>
+<img class ="icon" src ="../../images/icon2.jpg" alt="Certificate" width="180" height="180"/>
+<img class ="icon" src ="../../images/icon3.jpg" alt="food" width="180" height="180"/>
+<img class ="icon" src ="../../images/icon4.jpg" alt="Check" width="180" height="180"/>
+</div>
+
+<ul>
+<li>All the pets are primarly vaccinated ensuring no spread of diseases.</li>
+<li>Once you adopt a pet, you will get a certificate card that specifies the breed, approximate age, date found and date adopted.</li>
+<li>We will further provide with a brochure explaining a typical routine for the selected pet, food options and cleanliness measures to be taken.</li>
+<li>Every once a year we will have a checking process ensuring you are handling your pet with utmost care and for that you will be required to sign a 'No Objection Certificate'(NOC).</li>
+</ul>
+ 
+</div>
+
+<br>
+
+
+<div class="slideshow-container">
+
+ <div class="mySlides fade">
+
+<img src="../../images/americancurl.jpg" alt="CAT" class="pet" width="100";/>
+<div class="breed">BREED: AMERICAN CURL<br>AGE: 3 YEARS</div>
+
+</div>
+
+ <div class="mySlides fade">
+
+<img src="../../images/americancurl1.jpg" alt="CAT" class="pet"/>
+<div class="breed">BREED: AMERICAN CURL <br> AGE: 4 YEARS</div>
+
+
+</div>
+
+ <div class="mySlides fade">
+
+<img src="../../images/germanshepard.jpg" alt="DOG" class="pet"/>../
+<div class="breed">BREED: GERMAN SHEPARD <br>  AGE: 2 YEARS</div>
+
+
+</div>
+
+ <div class="mySlides fade">
+
+<img src="../../images/bloodhound.jpg" alt="DOG" class="pet"/>
+<div class="breed">BREED: BLOODHOUND <br>  AGE: 3 YEARS </div>
+
+
+</div>
+
+ <div class="mySlides fade">
+
+<img src="../../images/germanshepard1.jpg" alt="DOG" class="pet"/>
+<div class="breed">BREED: GERMAN SHEPARD <br> AGE: 5 YEARS</div>
+
+</div>
+
+ <div class="mySlides fade">
+
+<img src="../../images/siamesecat.jpg" alt="CAT" class="pet" />
+<div class="breed">BREED: SIAMESE CAT <br> AGE: 2.5 YEARS</div>
+
+</div>
+
+ <div class="mySlides fade">
+
+<img src="../../images/scottishfold.jpg" alt="CAT" class="pet"/>
+<div class="breed">BREED: SCOTTISH FOLD <br> AGE: 3 YEARS</div>
+
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+<form>
+
+<a target="_blank" href="../../supportForm/supportPets.html" class="moreBtn"> <div class="btnText">Details </div></a>
+</form>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+</div>
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<html>
+<html>
+<head>
+		<title> Nam-jai | Old Age Homes FORM </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="../CSS/supportOldHomes.css" rel="stylesheet" type="text/css">
+		<link rel="icon" href="../images/logo.png" type="image/png">
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar">
+		<div class="content">
+			<div class="logo">
+				
+			</div>
+			<ul class="menu-list">
+				<div class="icon cancel-btn">
+					<i class="fa fa-times"></i>
+				</div>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="loginRegisterForm/loginRegForm.html">My Account</a></li>		
+			</ul>
+			<div class="icon menu-btn">
+				<i class="fa fa-bars"></i>
+			</div>
+		</div>
+	</nav>
+
+	<div class="banner"></div>
+<!-- end of Navigation Bar -->
+
+<div class="form-box">
+	<div class="heading">
+		<h4><u> Provide Support </u></h4>
+	</div>
+
+	<!-- Login Form -->
+			<form action="../PHP/supportValidation.php" method="post" id='login' class='input-group-login'>
+				<input name="email" type='email'class='input-field'placeholder='Email Id' required >
+				<input name="password" type='password'class='input-field'placeholder='Enter Password' required>
+				<select class='input-field'>
+					<option value="none" selected disabled hidden>Donate </option>
+					<option>Clothes</option>
+					<option>Food Items</option>
+					<option>Beddings </option>
+					<option>Caps </option>
+					<option>Soaps and lotions </option>
+					<option>Diabetic Socks </option>
+					<option>Games and Puzzles </option>
+					<option>Towels </option>
+
+				</select>
+				<button type='submit'class='submit-btn'>Donate</button>
+
+			</form>
+	<!-- end of Login Form -->
+</div>
+
+
+
+<!-- Footer -->
+ <div class="footer">
+	<div class="column-1">
+ 		<img src="../images/footer.png">
+ 	</div>
+ 	
+ 	<hr>
+ 	<p class="copyRight"><i class="fa fa-copyright"></i> Copyright 2021 Nam-Jai Culture</p>
+ </div>
+ <!-- end of Footer -->
+
+
+<script src="../JavaScript/navigationBar.js" type="text/javascript"></script>
+
+</body>
+</html>
